@@ -25,7 +25,7 @@ public class Generator {
         List<String> warnings = new ArrayList<String>();
         boolean overwrite = true;
         //指定逆向工程配置文件
-        File configFile = new File("/Users/lzc/IdeaProjects/mvtest/src/main/java/com/lzc/mbgenerator/generator.xml");
+        File configFile = new File("/Users/lzc/IdeaProjects/basicssm/src/main/java/com/lzc/mbgenerator/generator.xml");
         ConfigurationParser cp = new ConfigurationParser(warnings);
         Configuration config;
 

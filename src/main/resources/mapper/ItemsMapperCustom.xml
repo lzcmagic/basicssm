@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.lzc.mvtest.dao.ItemsMapperCustom" >
+<mapper namespace="com.lzc.basicssm.dao.ItemsMapperCustom" >
 
     <!-- 定义商品查询的sql片段，就是商品查询条件 -->
     <sql id="query_items_where">
@@ -18,8 +18,8 @@
     <!-- parameterType传入包装对象(包装了查询条件)
         resultType建议使用扩展对象
      -->
-    <select id="findItemsList" parameterType="com.lzc.mvtest.domain.ItemsQueryVo"
-            resultType="com.lzc.mvtest.domain.ItemsCustom">
+    <select id="findItemsList" parameterType="com.lzc.basicssm.domain.ItemsQueryVo"
+            resultType="com.lzc.basicssm.domain.ItemsCustom">
         SELECT items.* FROM items
         <where>
             <include refid="query_items_where"></include>

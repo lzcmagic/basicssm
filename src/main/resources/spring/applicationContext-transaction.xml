@@ -33,6 +33,6 @@
     </tx:advice>
     <!-- aop -->
     <aop:config>
-        <aop:advisor advice-ref="txAdvice" pointcut="execution(* com.lzc.mvtest.service.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut="execution(* com.lzc.basicssm.service.*.*(..))"/>
     </aop:config>
 </beans>
