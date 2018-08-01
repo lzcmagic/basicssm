@@ -49,24 +49,6 @@
             </bean>
         </mvc:message-converters>
 
-        <!--<mvc:message-converters register-defaults="false">-->
-            <!--<bean class="org.springframework.http.converter.StringHttpMessageConverter"/>-->
-            <!--<bean class="org.springframework.http.converter.xml.XmlAwareFormHttpMessageConverter"/>-->
-            <!--<bean class="org.springframework.http.converter.ByteArrayHttpMessageConverter"/>-->
-            <!--<bean class="org.springframework.http.converter.BufferedImageHttpMessageConverter"/>-->
-            <!--&lt;!&ndash;配置fastjson&ndash;&gt;-->
-            <!--<bean id="fastJsonHttpMessageConverter" class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter">-->
-                <!--&lt;!&ndash;加入支持的媒体类型&ndash;&gt;-->
-                <!--<property name="supportedMediaTypes">-->
-                    <!--<list>-->
-                        <!--<value>text/html;charset=UTF-8</value>-->
-                        <!--<value>application/json;charset=UTF-8</value>-->
-                    <!--</list>-->
-                <!--</property>-->
-                <!--<property name="fastJsonConfig" ref="fastJsonConfig"/>-->
-            <!--</bean>-->
-
-        <!--</mvc:message-converters>-->
     </mvc:annotation-driven>
 
     <!--拦截器配置-->
