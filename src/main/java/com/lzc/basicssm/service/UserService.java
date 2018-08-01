@@ -1,6 +1,6 @@
 package com.lzc.basicssm.service;
 
-import com.lzc.basicssm.domain.User;
+import com.lzc.basicssm.entity.User;
 
 public interface UserService {
 

@@ -1,7 +1,7 @@
 package com.lzc.basicssm.controller;
 
 import com.lzc.basicssm.bean.base.BaseBean;
-import com.lzc.basicssm.domain.User;
+import com.lzc.basicssm.entity.User;
 import com.lzc.basicssm.service.UserService;
 import com.lzc.basicssm.utils.RedisUtil;
 import org.slf4j.Logger;

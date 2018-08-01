@@ -1,7 +1,7 @@
 package com.lzc.basicssm.dao;
 
-import com.lzc.basicssm.domain.Items;
-import com.lzc.basicssm.domain.ItemsExample;
+import com.lzc.basicssm.entity.Items;
+import com.lzc.basicssm.entity.ItemsExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

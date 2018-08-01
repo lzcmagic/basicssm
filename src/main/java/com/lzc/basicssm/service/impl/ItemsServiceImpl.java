@@ -1,8 +1,8 @@
 package com.lzc.basicssm.service.impl;
 
-import com.lzc.basicssm.domain.Items;
-import com.lzc.basicssm.domain.ItemsCustom;
-import com.lzc.basicssm.domain.ItemsQueryVo;
+import com.lzc.basicssm.entity.Items;
+import com.lzc.basicssm.entity.ItemsCustom;
+import com.lzc.basicssm.entity.ItemsQueryVo;
 import com.lzc.basicssm.dao.ItemsDao;
 import com.lzc.basicssm.dao.ItemsMapperCustom;
 import com.lzc.basicssm.service.ItemsService;

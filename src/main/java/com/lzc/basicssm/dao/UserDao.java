@@ -1,6 +1,6 @@
 package com.lzc.basicssm.dao;
 
-import com.lzc.basicssm.domain.User;
+import com.lzc.basicssm.entity.User;
 
 public interface UserDao {
 

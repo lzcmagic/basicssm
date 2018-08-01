@@ -1,4 +1,4 @@
-package com.lzc.basicssm.domain;
+package com.lzc.basicssm.entity;
 
 public class Book {
     private String id;

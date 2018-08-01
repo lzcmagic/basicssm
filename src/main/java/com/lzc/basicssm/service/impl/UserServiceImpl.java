@@ -1,7 +1,7 @@
 package com.lzc.basicssm.service.impl;
 
 import com.lzc.basicssm.dao.UserDao;
-import com.lzc.basicssm.domain.User;
+import com.lzc.basicssm.entity.User;
 import com.lzc.basicssm.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

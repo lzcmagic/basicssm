@@ -18,8 +18,8 @@
     <!-- parameterType传入包装对象(包装了查询条件)
         resultType建议使用扩展对象
      -->
-    <select id="findItemsList" parameterType="com.lzc.basicssm.domain.ItemsQueryVo"
-            resultType="com.lzc.basicssm.domain.ItemsCustom">
+    <select id="findItemsList" parameterType="com.lzc.basicssm.entity.ItemsQueryVo"
+            resultType="com.lzc.basicssm.entity.ItemsCustom">
         SELECT items.* FROM items
         <where>
             <include refid="query_items_where"></include>

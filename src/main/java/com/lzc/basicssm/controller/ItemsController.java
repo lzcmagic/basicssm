@@ -1,6 +1,6 @@
 package com.lzc.basicssm.controller;
 
-import com.lzc.basicssm.domain.ItemsCustom;
+import com.lzc.basicssm.entity.ItemsCustom;
 import com.lzc.basicssm.service.ItemsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

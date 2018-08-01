@@ -1,7 +1,7 @@
 package com.lzc.basicssm.service;
 
-import com.lzc.basicssm.domain.ItemsCustom;
-import com.lzc.basicssm.domain.ItemsQueryVo;
+import com.lzc.basicssm.entity.ItemsCustom;
+import com.lzc.basicssm.entity.ItemsQueryVo;
 
 import java.util.List;
 

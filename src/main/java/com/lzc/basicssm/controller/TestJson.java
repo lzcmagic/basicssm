@@ -1,7 +1,7 @@
 package com.lzc.basicssm.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.lzc.basicssm.domain.Book;
+import com.lzc.basicssm.entity.Book;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
