@@ -125,9 +125,5 @@ public class RedisUtil {
         return result;
     }
 
-    public void setRedisTemplate(
-            RedisTemplate<Serializable, Object> redisTemplate) {
-        this.redisTemplate = redisTemplate;
-    }
 
 }

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzc.basicssm.dao.DiaryDao">
+
+
+    <resultMap id="BaseResultMap" type="com.lzc.basicssm.entity.DiaryType">
+
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="type_name" jdbcType="VARCHAR" property="typeName"/>
+        <result column="important_level" jdbcType="VARCHAR" property="importantLevel"/>
+        <result column="create_time" jdbcType="DATE" property="createTime"/>
+        <collection property="diaries" javaType="ArrayList" column="id" ofType="com.lzc.basicssm.entity.Diary" select="selectDiaryForType"/>
+    </resultMap>
+
+
+    <resultMap id="DiaryMap" type="com.lzc.basicssm.entity.Diary">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="user_id" jdbcType="INTEGER" property="userId"/>
+        <result column="type_id" jdbcType="INTEGER" property="typeId"/>
+        <result column="create_time" jdbcType="DATE" property="createTime"/>
+        <result column="title" jdbcType="VARCHAR" property="title"/>
+        <result column="content" jdbcType="LONGVARCHAR" property="content"/>
+    </resultMap>
+
+    <select id="queryDiarysByUserName" parameterType="String" resultMap="BaseResultMap">
+        select id,type_name,important_level,create_time from diary_type where nick_name=#{nickName}
+    </select>
+
+    <select id="selectDiaryForType" resultType="com.lzc.basicssm.entity.Diary">
+        select id,create_time,title from diary where type_id=#{type_id}
+    </select>
+
+    <select id="queryDiaryById" resultMap="DiaryMap">
+        select * from diary where id =#{id}
+    </select>
+
+    <insert id="insertDiary" parameterType="diary" useGeneratedKeys="true" keyProperty="id">
+        insert into diary (user_id,type_id,create_time,title,content)
+        values (#{userId},#{typeId},#{createTime},#{title},#{content})
+    </insert>
+</mapper>

@@ -91,7 +91,7 @@
           p:password="${redis.pass}"
           p:pool-config-ref="poolConfig"/>
 
-    <bean id="redisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate">
+    <bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate">
         <property name="connectionFactory" ref="jedisConnectionFactory"/>
     </bean>
 

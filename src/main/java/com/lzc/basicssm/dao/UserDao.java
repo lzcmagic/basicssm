@@ -1,6 +1,7 @@
 package com.lzc.basicssm.dao;
 
-import com.lzc.basicssm.entity.User;
+import com.lzc.basicssm.entity.LoginUser;
+import com.lzc.basicssm.entity.UserInfo;
 
 public interface UserDao {
 
@@ -10,6 +11,8 @@ public interface UserDao {
      *
      * @mbggenerated Mon Jul 23 14:05:51 CST 2018
      */
-    User selectByUserName(String username);
+    LoginUser selectByUserName(String username);
 
+
+    UserInfo selectInfoByName(String name);
 }

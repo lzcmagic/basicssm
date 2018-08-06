@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzc.basicssm.dao.DiaryTypeDao">
+
+    <insert id="insertType">
+                 insert into diary_type (type_name,create_time,important_level,user_id,nick_name)
+                 values (#{type_name},#{createTime},#{importantLevel},#{userId},#{nickName})
+             </insert>
+
+    <select id="selectTypeByName" resultType="Integer" parameterType="String">
+        select count(id) from diary_type where type_name =#{typeName}
+    </select>
+
+    <select id="selectAllTypeByUserId" resultType="diaryType" parameterType="Integer">
+        select id,type_name from diary_type where user_id =#{userId} order by important_level
+    </select>
+</mapper>
