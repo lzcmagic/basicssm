@@ -11,7 +11,7 @@
         select count(id) from diary_type where type_name =#{typeName}
     </select>
 
-    <select id="selectAllTypeByUserId" resultType="diaryType" parameterType="Integer">
+    <select id="selectAllTypeByUserId" resultType="diaryType" parameterType="Integer" fetchSize="1">
         select id,type_name from diary_type where user_id =#{userId} order by important_level
     </select>
 </mapper>
