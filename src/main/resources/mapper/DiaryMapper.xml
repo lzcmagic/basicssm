@@ -3,6 +3,10 @@
 <mapper namespace="com.lzc.basicssm.dao.DiaryDao">
 
 
+    <cache eviction="FIFO"
+            flushInterval="60000"
+            size="512"
+            readOnly="true"/>
     <resultMap id="BaseResultMap" type="com.lzc.basicssm.entity.DiaryType">
 
         <id column="id" jdbcType="INTEGER" property="id"/>
@@ -23,6 +27,7 @@
     </resultMap>
 
     <select id="queryDiarysByUserName" parameterType="String" resultMap="BaseResultMap">
+
         select id,type_name,important_level,create_time from diary_type where nick_name=#{nickName}
     </select>
 

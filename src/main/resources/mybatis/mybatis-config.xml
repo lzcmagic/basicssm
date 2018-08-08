@@ -9,6 +9,7 @@
     <!--</mappers>-->
     <!-- mybatis全局设置 -->
     <settings>
+        <setting name="logImpl" value="LOG4J"/>
         <!--使用数据库自增id-->
         <setting name="useGeneratedKeys" value="true" />
 
